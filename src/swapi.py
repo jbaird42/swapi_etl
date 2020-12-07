@@ -24,6 +24,11 @@ class SWAPI:
         return results
 
     def get_resources(self, url_list: list) -> list:
+        """
+        Given a list of Star Wars API resources will return a list each resources data
+        :param url_list: list of resource urls
+        :return:
+        """
         resource_list = []
         for url in url_list:
             resource_list.append(self.__call_api(url))

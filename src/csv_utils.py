@@ -30,6 +30,13 @@ def send_csv_file(endpoint: str, filepath: str):
 
 
 def build_csv(data: list, fieldnames: list, filepath: str):
+    """
+    Build a csv given a list of dicts with keys equal to the fieldnames
+    :param data: List of dicts each with data for the csv row
+    :param fieldnames: Column names
+    :param filepath: path to output file
+    :return:
+    """
     try:
         with open(filepath, 'w', newline='') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)

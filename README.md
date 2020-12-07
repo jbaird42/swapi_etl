@@ -10,13 +10,14 @@ An ETL application for the Star Wars API (https://swapi.dev). The application cu
 
 ## How to use locally:
 
-
 ### Using Pipenv
+
 `pipenv install` 
 
 `pipenv run python main.py`
 
-#### How to run tests:
+#### Running Tests:
+
 `pipenv install --dev`
 
 `pipenv run nosetests`
@@ -25,7 +26,7 @@ Note: You may optionally include the test_setup.cfg if you would like test cover
 
 Ex: `pipenv run nosetests -c test_setup.cfg`
 
-
+-----------
 
 ### Using Docker
 
