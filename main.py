@@ -12,8 +12,8 @@ def main():
     swapi = SWAPI(base_url="https://swapi.dev/api")
     etl = TopCharacterProcessor(swapi=swapi,
                                 top_character_limit=int(os.getenv("TOP_SW_CHARACTER_LIMIT", 10)))
-    top_ten = etl.get_top_characters(sort_by="height")
-    build_csv(data=top_ten, fieldnames=['name', 'species', 'height', 'appearances'],
+    top_characters = etl.get_top_characters(sort_by="height")
+    build_csv(data=top_characters, fieldnames=['name', 'species', 'height', 'appearances'],
               filepath=csv_filepath)
     response = send_csv_file(endpoint="https://httpbin.org/post",
                              filepath=csv_filepath)
