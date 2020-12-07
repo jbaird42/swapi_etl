@@ -1,4 +1,4 @@
-# sw_etl
+# swapi_etl
 An ETL application for the Star Wars API (https://swapi.dev). The application currently does the following:
 
 - Collects Character data from swapi.dev
