@@ -1,4 +1,4 @@
-# sw_etl
+# swapi_etl
 An ETL application for the Star Wars API (https://swapi.dev). The application currently does the following:
 
 - Collects Character data from swapi.dev
@@ -25,12 +25,14 @@ Note: You may optionally include the test_setup.cfg if you would like test cover
 
 Ex: `pipenv run nosetests -c test_setup.cfg`
 
+
+
 ### Using Docker
 
 `docker-compose build`
 `docker-compose up`
 
-### Running tests:
+#### Running tests:
 
 `docker-compose -f docker-compose-test.yaml build`
 `docker-compose run`
