@@ -42,7 +42,7 @@ class SWAPI:
         :return:
         """
         try:
-            response = requests.get(endpoint, timeout=10)
+            response = requests.get(endpoint, timeout=15)
             if response.status_code != 200:
                 raise FailedFetchingResource()
             return response.json()
