@@ -30,11 +30,13 @@ Ex: `pipenv run nosetests -c test_setup.cfg`
 ### Using Docker
 
 `docker-compose build`
+
 `docker-compose up`
 
 #### Running tests:
 
 `docker-compose -f docker-compose-test.yaml build`
+
 `docker-compose run`
 
 
