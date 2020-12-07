@@ -38,7 +38,7 @@ def build_csv(data: list, fieldnames: list, filepath: str):
     :return:
     """
     try:
-        with open(filepath, 'w', newline='') as csvfile:
+        with open(filepath, 'w+', newline='') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             for item in data:
