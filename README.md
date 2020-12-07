@@ -8,12 +8,15 @@ An ETL application for the Star Wars API (https://swapi.dev). The application cu
 - send that CSV file to httpbin.org/post
 
 
-###How to use locally:
+## How to use locally:
+
+
+### Using Pipenv
 `pipenv install` 
 
 `pipenv run python main.py`
 
-###How to run tests:
+#### How to run tests:
 `pipenv install --dev`
 
 `pipenv run nosetests`
@@ -21,3 +24,16 @@ An ETL application for the Star Wars API (https://swapi.dev). The application cu
 Note: You may optionally include the test_setup.cfg if you would like test coverage info.
 
 Ex: `pipenv run nosetests -c test_setup.cfg`
+
+### Using Docker
+
+`docker-compose build`
+`docker-compose up`
+
+### Running tests:
+
+`docker-compose -f docker-compose-test.yaml build`
+`docker-compose run`
+
+
+ 

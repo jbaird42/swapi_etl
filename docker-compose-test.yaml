@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  swapi_etl:
+    build:
+      dockerfile: ./devops/test/Dockerfile
+      context: .
+      target: app
+    restart: on-failure
+

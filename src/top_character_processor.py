@@ -20,7 +20,8 @@ class TopCharacterProcessor:
     def get_top_characters(self, sort_by="appearances") -> list:
         """
         Returns the Top  star wars characters by number of film appearances
-        :param sort_by: field to sort results by. Default is appearances
+        :param sort_by: field to sort results by. OPTIONS: [ "appearances", "height" ] default is
+            "appearances"
         :return: List of dictionaries with details of the top ten characters
         """
         try:
@@ -93,6 +94,7 @@ class TopCharacterProcessor:
 
     @staticmethod
     def __sort_results(results, sort_by):
+        sort_by = "appearances" if sort_by not in ["appearances", "height"] else sort_by
         return sorted(results, key=lambda k: int(k[sort_by]), reverse=True)
 
     @staticmethod
