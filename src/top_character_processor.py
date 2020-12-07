@@ -71,7 +71,7 @@ class TopCharacterProcessor:
             min_appearances = appearances
         return top_appearances_urls, runner_up_urls
 
-    def __appearances_tiebreaker(self, top_characters: list, runners_up: list):
+    def __appearances_tiebreaker(self, top_characters: list, runners_up: list) -> list:
         """
         Breaks a tie in runner up characters should there be one
         :param top_characters:

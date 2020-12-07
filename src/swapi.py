@@ -8,7 +8,7 @@ class SWAPI:
     def __init__(self, base_url: str):
         self.__base_url = base_url
 
-    def get_all(self, resource: str):
+    def get_all(self, resource: str) -> list:
         """
         Returns all results for the provided resource
         :param resource:

@@ -4,7 +4,7 @@ import csv
 from src.exceptions import FailedPOST, FailedBuildingCSV
 
 
-def send_csv_file(endpoint: str, filepath: str):
+def send_csv_file(endpoint: str, filepath: str) -> dict:
     """
     Send a CSV file via POST
     :param endpoint: url where the csv should be sent
