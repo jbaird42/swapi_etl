@@ -16,11 +16,11 @@ class SWAPI:
         """
         endpoint = f"{self.__base_url}/{resource}"
         results = []
-        next = True
-        while next:
+        next_page = True
+        while next_page:
             json_response = self.__call_api(endpoint)
             results += json_response.get("results", [])
-            next = json_response.get("next")
+            next_page = json_response.get("next")
         return results
 
     def get_resources(self, url_list: list) -> list:
