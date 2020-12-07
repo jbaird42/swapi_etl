@@ -8,12 +8,12 @@ An ETL application for the Star Wars API (https://swapi.dev). The application cu
 - send that CSV file to httpbin.org/post
 
 
-###How to use locally:
+### How to use locally:
 `pipenv install` 
 
 `pipenv run python main.py`
 
-###How to run tests:
+### How to run tests:
 `pipenv install --dev`
 
 `pipenv run nosetests`
